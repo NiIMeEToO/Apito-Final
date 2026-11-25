@@ -1,7 +1,6 @@
 # Apito Final
 
-Site de futebol feito em HTML, CSS e JavaScript puros para a disciplina Desenvolvimento de Interfaces.
-
+Apito Final é um site de futebol com tela inicial, carrossel, cartões, listas de times e jogadores, pesquisa por abas, contato, login e painel de acessibilidade. Foi feito em HTML, CSS e JavaScript puros, sem frameworks.
 ## Como abrir
 Abra `index.html` no navegador.
 

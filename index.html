@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apito Final</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Apito Final, página inicial">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="3"/><polygon points="20,11 27,16 24.5,24.5 15.5,24.5 13,16" fill="currentColor"/><path d="M20 11V3M27 16l8-3M24.5 24.5l5 7M15.5 24.5l-5 7M13 16l-8-3" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+      Apito Final
+    </a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#inicio" data-nav="inicio">Início</a></li>
+        <li><a href="#times" data-nav="times">Times</a></li>
+        <li><a href="#jogadores" data-nav="jogadores">Jogadores</a></li>
+        <li><a href="#pesquisa" data-nav="pesquisa">Pesquisa</a></li>
+        <li><a href="#contato" data-nav="contato">Contato</a></li>
+        <li><a href="#login" data-nav="login" id="loginLink">Entrar</a></li>
+      </ul>
+    </nav>
+    <button class="btn alt a11y-btn" id="a11yToggle" aria-expanded="false" aria-controls="a11yPanel">Acessibilidade</button>
+    <div class="panel" id="a11yPanel" role="group" aria-labelledby="a11yTitle" hidden>
+      <h2 id="a11yTitle">Acessibilidade</h2>
+      <div>
+        <span class="panel-label" id="lblTheme">Tema</span>
+        <div class="seg" role="group" aria-labelledby="lblTheme">
+          <button type="button" data-theme-set="light" aria-pressed="false">Claro</button>
+          <button type="button" data-theme-set="dark" aria-pressed="false">Escuro</button>
+          <button type="button" data-theme-set="system" aria-pressed="true">Sistema</button>
+        </div>
+      </div>
+      <div>
+        <span class="panel-label" id="lblSize">Tamanho da fonte: <output id="sizeOut">100%</output></span>
+        <div class="seg" role="group" aria-labelledby="lblSize">
+          <button type="button" id="sizeDown" aria-label="Diminuir fonte">A−</button>
+          <button type="button" id="sizeReset" aria-label="Fonte padrão">A</button>
+          <button type="button" id="sizeUp" aria-label="Aumentar fonte">A+</button>
+        </div>
+      </div>
+      <label class="switch"><input type="checkbox" id="optContrast"> Alto contraste</label>
+      <label class="switch"><input type="checkbox" id="optSpacing"> Espaçamento maior entre letras e linhas</label>
+      <label class="switch"><input type="checkbox" id="optMotion"> Reduzir animações</label>
+      <a href="#acessibilidade" id="a11yLink">Ver análise de contraste das cores</a>
+      <button type="button" class="btn alt" id="a11yReset">Restaurar padrão</button>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+<div class="wrap">
+
+<!-- INÍCIO -->
+<div class="view" id="v-inicio">
+  <section class="hero" aria-labelledby="h-hero">
+    <div>
+      <p class="eyebrow">Futebol brasileiro e mundial</p>
+      <h1 id="h-hero">O jogo todo, <em>do apito inicial</em> ao final</h1>
+      <p class="lead">Pesquise jogadores, clubes e Copas do Mundo, entenda as regras com cartões explicativos e guarde seus favoritos.</p>
+      <div class="cta">
+        <a class="btn yellow" href="#pesquisa">Pesquisar agora</a>
+        <a class="btn alt" href="#contato">Fale com a gente</a>
+      </div>
+    </div>
+    <aside class="score" aria-label="Final da Copa de 2002">
+      <p class="eyebrow">Jogo para lembrar · 30/06/2002</p>
+      <div class="match"><span>Brasil</span><b>2 × 0</b><span>Alemanha</span></div>
+      <small>Yokohama. Ronaldo marcou os dois gols e o Brasil conquistou o pentacampeonato.</small>
+    </aside>
+  </section>
+
+  <section aria-labelledby="h-car">
+    <div class="sec-head"><h2 id="h-car">Em destaque</h2><p>Quatro cenas do futebol. Use as setas ou os pontos para navegar.</p></div>
+    <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Imagens em destaque">
+      <div class="viewport"><div class="track" id="track" aria-live="off">
+
+        <figure class="slide" role="group" aria-roledescription="slide" aria-label="1 de 4">
+          <svg viewBox="0 0 800 325" role="img" aria-label="Campo de futebol visto de cima, com linhas brancas sobre o gramado">
+            <rect width="800" height="325" fill="#0F6B3A"/>
+            <g fill="#0B5A33"><rect x="0" width="100" height="325"/><rect x="200" width="100" height="325"/><rect x="400" width="100" height="325"/><rect x="600" width="100" height="325"/></g>
+            <g fill="none" stroke="#fff" stroke-width="4"><rect x="30" y="25" width="740" height="275"/><line x1="400" y1="25" x2="400" y2="300"/><circle cx="400" cy="162" r="48"/><rect x="30" y="85" width="110" height="155"/><rect x="660" y="85" width="110" height="155"/><rect x="30" y="127" width="40" height="71"/><rect x="730" y="127" width="40" height="71"/></g>
+            <circle cx="400" cy="162" r="5" fill="#fff"/>
+          </svg>
+          <figcaption><strong>O campo: 105 × 68 metros</strong><span>Medidas usadas em jogos internacionais. A área do gol mede 5,5 m e a grande área, 16,5 m.</span></figcaption>
+        </figure>
+
+        <figure class="slide" role="group" aria-roledescription="slide" aria-label="2 de 4">
+          <svg viewBox="0 0 800 325" role="img" aria-label="Bola de futebol branca e preta sobre fundo amarelo">
+            <rect width="800" height="325" fill="#F2C200"/>
+            <circle cx="400" cy="162" r="120" fill="#fff" stroke="#14211A" stroke-width="6"/>
+            <polygon points="400,100 452,138 432,198 368,198 348,138" fill="#14211A"/>
+            <g stroke="#14211A" stroke-width="6" fill="none"><path d="M400 100V50M452 138l48-16M432 198l30 40M368 198l-30 40M348 138l-48-16"/></g>
+            <g fill="#14211A"><polygon points="500,122 520,150 505,175 480,160 485,132"/><polygon points="300,122 280,150 295,175 320,160 315,132"/><polygon points="462,238 440,270 400,282 430,248"/><polygon points="338,238 360,270 400,282 370,248"/></g>
+          </svg>
+          <figcaption><strong>A bola, 32 gomos</strong><span>O desenho clássico de 12 pentágonos e 20 hexágonos marcou as Copas do Mundo por décadas.</span></figcaption>
+        </figure>
+
+        <figure class="slide" role="group" aria-roledescription="slide" aria-label="3 de 4">
+          <svg viewBox="0 0 800 325" role="img" aria-label="Taça dourada sobre fundo verde escuro">
+            <rect width="800" height="325" fill="#0B3D24"/>
+            <circle cx="400" cy="150" r="140" fill="#0F5A33"/>
+            <path d="M340 60h120c0 70-20 110-60 120-40-10-60-50-60-120z" fill="#F2C200"/>
+            <path d="M340 75c-40 0-50 40-20 60M460 75c40 0 50 40 20 60" fill="none" stroke="#F2C200" stroke-width="12"/>
+            <rect x="388" y="178" width="24" height="50" fill="#F2C200"/>
+            <rect x="350" y="228" width="100" height="26" rx="4" fill="#D9AA00"/>
+            <rect x="335" y="254" width="130" height="22" rx="4" fill="#F2C200"/>
+          </svg>
+          <figcaption><strong>Brasil, cinco estrelas</strong><span>1958, 1962, 1970, 1994 e 2002. É a única seleção presente em todas as edições da Copa do Mundo masculina.</span></figcaption>
+        </figure>
+
+        <figure class="slide" role="group" aria-roledescription="slide" aria-label="4 de 4">
+          <svg viewBox="0 0 800 325" role="img" aria-label="Arquibancada de estádio com torcedores em fileiras coloridas">
+            <rect width="800" height="325" fill="#13211A"/>
+            <g id="crowd"></g>
+            <rect y="270" width="800" height="55" fill="#0F6B3A"/>
+          </svg>
+          <figcaption><strong>A torcida</strong><span>O Maracanã recebeu mais de 170 mil pessoas na final de 1950. Hoje a capacidade é menor, perto de 78 mil lugares.</span></figcaption>
+        </figure>
+      </div></div>
+      <div class="ctrl">
+        <button class="btn alt sq" id="prev" aria-label="Slide anterior">‹</button>
+        <button class="btn alt sq" id="next" aria-label="Próximo slide">›</button>
+        <button class="btn alt" id="playPause" aria-pressed="false">Pausar</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-cards">
+    <div class="sec-head"><h2 id="h-cards">Cartões do dia</h2><p>Perfis para começar a explorar. Marque com a estrela os que você quer guardar.</p></div>
+    <div class="grid" id="featured"></div>
+  </section>
+
+  <section aria-labelledby="h-expl">
+    <div class="sec-head"><h2 id="h-expl">Entenda o jogo</h2><p>Quatro dúvidas que aparecem em toda roda de torcedores.</p></div>
+    <div class="explain">
+      <details class="card"><summary>Impedimento</summary><p>O atacante está em posição irregular quando, no momento do passe, está mais perto da linha de gol adversária do que a bola e do que o penúltimo defensor. Estar na posição só vira falta se ele participar da jogada. Não existe impedimento em cobrança de lateral, escanteio ou tiro de meta.</p></details>
+      <details class="card"><summary>Pênalti</summary><p>Marcado para falta cometida dentro da grande área. A bola fica na marca, a 11 metros do gol, e só o goleiro defende. Na decisão por pênaltis, cada time faz cinco cobranças alternadas e, se persistir o empate, segue em pares.</p></details>
+      <details class="card"><summary>Esquema 4-3-3</summary><p>Quatro defensores, três meio-campistas e três atacantes. Os números indicam a quantidade de jogadores por setor, sem contar o goleiro. Dá amplitude ao ataque e exige que os meias ajudem na marcação.</p></details>
+      <details class="card"><summary>VAR</summary><p>Árbitro de vídeo. Revisa apenas quatro tipos de lance: gol, pênalti, cartão vermelho direto e erro de identidade. A decisão em campo continua sendo do árbitro principal, que pode olhar o monitor na beira do campo.</p></details>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-num">
+    <div class="sec-head"><h2 id="h-num">Números que contam história</h2></div>
+    <div class="stats">
+      <div class="stat"><b>5</b><span>títulos mundiais do Brasil</span></div>
+      <div class="stat"><b>15</b><span>gols de Ronaldo em Copas</span></div>
+      <div class="stat"><b>6</b><span>prêmios de melhor do mundo para Marta</span></div>
+      <div class="stat"><b>11 m</b><span>distância da marca do pênalti</span></div>
+    </div>
+  </section>
+</div>
+
+<!-- TIMES -->
+<div class="view" id="v-times" hidden>
+  <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Times</h1><p>Clubes do Brasil e do mundo, com títulos e história. Filtre por região e marque os seus favoritos.</p></div>
+  <div class="row chips" id="timesChips" role="group" aria-label="Filtrar times por região"></div>
+  <p class="count" id="timesCount" role="status" aria-live="polite"></p>
+  <div class="grid" id="timesGrid"></div>
+</div>
+
+<!-- JOGADORES -->
+<div class="view" id="v-jogadores" hidden>
+  <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Jogadores</h1><p>Craques de todas as épocas. Filtre pela posição em campo e marque os seus favoritos.</p></div>
+  <div class="row chips" id="jogChips" role="group" aria-label="Filtrar jogadores por posição"></div>
+  <p class="count" id="jogCount" role="status" aria-live="polite"></p>
+  <div class="grid" id="jogGrid"></div>
+</div>
+
+<!-- PESQUISA -->
+<div class="view" id="v-pesquisa" hidden>
+  <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Pesquisa</h1><p>Escolha uma aba, digite parte do nome e os resultados aparecem enquanto você escreve.</p></div>
+  <div role="tablist" aria-label="Tipo de pesquisa" id="tabs">
+    <button role="tab" id="tab-jogadores" aria-selected="true" aria-controls="resultados" data-k="jogadores">Jogadores</button>
+    <button role="tab" id="tab-clubes" aria-selected="false" aria-controls="resultados" tabindex="-1" data-k="clubes">Clubes</button>
+    <button role="tab" id="tab-copas" aria-selected="false" aria-controls="resultados" tabindex="-1" data-k="copas">Copas</button>
+  </div>
+  <div class="search-box">
+    <div class="field"><label for="q">Buscar</label><input type="text" id="q" placeholder="Ex.: Marta, Palmeiras, 1970" autocomplete="off"></div>
+    <div class="field" style="flex:0 1 12rem"><label for="onlyFav">Mostrar</label>
+      <select id="onlyFav"><option value="all">Todos</option><option value="fav">Só favoritos</option></select></div>
+  </div>
+  <p class="count" id="count" role="status" aria-live="polite"></p>
+  <div id="resultados" role="tabpanel" tabindex="0" aria-labelledby="tab-jogadores"><div class="grid" id="resGrid"></div></div>
+</div>
+
+<!-- CONTATO -->
+<div class="view" id="v-contato" hidden>
+  <div class="split">
+    <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Contato</h1>
+      <p>Sugira um jogador, aponte um erro ou mande uma ideia de seção. Todos os campos com asterisco são obrigatórios.</p>
+      <p class="note">Esta página é um projeto acadêmico. O formulário valida os dados no seu navegador e não envia a mensagem a nenhum servidor.</p></div>
+    <form class="form" id="contactForm" novalidate>
+      <div class="field"><label for="cNome">Nome *</label><input type="text" id="cNome" autocomplete="name" aria-describedby="eNome"><div class="err" id="eNome"></div></div>
+      <div class="field"><label for="cMail">E-mail *</label><input type="email" id="cMail" autocomplete="email" aria-describedby="eMail"><div class="err" id="eMail"></div></div>
+      <div class="field"><label for="cTipo">Assunto</label>
+        <select id="cTipo"><option>Sugestão de conteúdo</option><option>Erro em uma informação</option><option>Acessibilidade</option><option>Outro</option></select></div>
+      <div class="field"><label for="cMsg">Mensagem *</label><textarea id="cMsg" aria-describedby="eMsg"></textarea><div class="err" id="eMsg"></div></div>
+      <button class="btn" type="submit">Enviar mensagem</button>
+      <div class="notice" id="cOk" role="status" hidden></div>
+    </form>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div class="view" id="v-login" hidden>
+  <div class="split">
+    <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Entrar</h1>
+      <p>Com a conta você mantém seus favoritos ligados ao seu nome e personaliza o site.</p>
+      <p class="note">Demonstração: qualquer e-mail válido e senha com 6 ou mais caracteres entram. Nada é enviado nem guardado além do nome exibido neste navegador.</p></div>
+    <div>
+      <form class="form" id="loginForm" novalidate>
+        <div class="field"><label for="lMail">E-mail</label><input type="email" id="lMail" autocomplete="email" aria-describedby="eLMail"><div class="err" id="eLMail"></div></div>
+        <div class="field"><label for="lPass">Senha</label>
+          <div class="pw"><input type="password" id="lPass" autocomplete="current-password" aria-describedby="eLPass"><button type="button" class="btn alt" id="showPass" aria-pressed="false">Mostrar</button></div>
+          <div class="err" id="eLPass"></div></div>
+        <button class="btn" type="submit">Entrar</button>
+      </form>
+      <div class="notice" id="logged" role="status" hidden>
+        <p><strong id="loggedName"></strong>, você está dentro.</p>
+        <p class="note" style="margin-top:.4rem">Seus favoritos aparecem na aba Pesquisa, no filtro “Só favoritos”.</p>
+        <button type="button" class="btn alt" id="logout" style="margin-top:.8rem">Sair</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACESSIBILIDADE -->
+<div class="view" id="v-acessibilidade" hidden>
+  <div class="sec-head"><h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Contraste das cores</h1>
+    <p>Razões calculadas na hora, com as cores do tema que está ativo agora. Troque o tema no painel de acessibilidade e a tabela se atualiza. A meta do WCAG 2.2 é 4,5:1 para texto comum (nível AA), 3:1 para texto grande e componentes, e 7:1 para o nível AAA.</p></div>
+  <div class="tbl"><table>
+    <caption class="eyebrow" style="text-align:left;padding:.8rem .9rem">Pares de cor usados no site</caption>
+    <thead><tr><th scope="col">Uso</th><th scope="col">Amostra</th><th scope="col">Razão</th><th scope="col">AA texto</th><th scope="col">AAA texto</th></tr></thead>
+    <tbody id="contrastBody"></tbody></table></div>
+  <section>
+    <div class="sec-head"><h2>Psicologia das cores aplicada</h2></div>
+    <div class="grid">
+      <article class="card"><span class="tag green">Verde gramado</span><h3>Campo e confiança</h3><p>Remete ao gramado, a ar livre e a equilíbrio. É a cor principal de botões, abas e rodapé.</p></article>
+      <article class="card"><span class="tag">Amarelo cartão</span><h3>Atenção e energia</h3><p>É a cor do cartão de advertência. Fica reservada para chamadas e destaques, sempre com texto escuro por cima.</p></article>
+      <article class="card"><span class="tag green">Neutros esverdeados</span><h3>Leitura longa</h3><p>Branco e preto puros cansam a vista. Fundos e textos com leve tom verde mantêm contraste alto com mais conforto.</p></article>
+    </div>
+  </section>
+</div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="brand" href="#inicio">Apito Final</a><p style="margin-top:.6rem;max-width:26rem">Site de futebol feito como projeto final da disciplina Desenvolvimento de Interfaces.</p></div>
+      <div><h2>Navegar</h2><ul><li><a href="#inicio">Início</a></li><li><a href="#times">Times</a></li><li><a href="#jogadores">Jogadores</a></li><li><a href="#pesquisa">Pesquisa</a></li><li><a href="#contato">Contato</a></li><li><a href="#login">Entrar</a></li></ul></div>
+      <div><h2>Acessibilidade</h2><ul><li><a href="#acessibilidade">Análise de contraste</a></li><li>Navegação por teclado</li><li>Tema claro e escuro</li></ul></div>
+    </div>
+    <p class="small">Dados de futebol conferidos em fontes públicas. Projeto acadêmico, sem fins comerciais.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

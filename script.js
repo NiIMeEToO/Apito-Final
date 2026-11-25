@@ -74,7 +74,7 @@
       {n:'Neymar',s:'Atacante · Santos, Barcelona, PSG',t:'Maior artilheiro da seleção masculina',d:'Passou os 77 gols de Pelé pela seleção em 2023. Campeão olímpico em 2016.'}
     ],
     clubes:[
-      {n:'Flamengo',s:'Rio de Janeiro · fundado em 1895',t:'Libertadores: 1981, 2019, 2022',d:'Campeão mundial em 1981. Tem uma das maiores torcidas do país.'},
+      {n:'Flamengo',s:'Rio de Janeiro · fundado em 1895',t:'Libertadores: 1981, 2019, 2022, 2025',d:'Campeão mundial em 1981. Tem uma das maiores torcidas do país.'},
       {n:'Corinthians',s:'São Paulo · fundado em 1910',t:'Mundial: 2000 e 2012',d:'Venceu o primeiro Mundial de Clubes da FIFA, em 2000, disputado no Brasil.'},
       {n:'Palmeiras',s:'São Paulo · fundado em 1914',t:'Libertadores: 1999, 2020, 2021',d:'Bicampeão seguido da Libertadores em 2020 e 2021.'},
       {n:'Santos',s:'Santos · fundado em 1912',t:'Libertadores: 1962, 1963, 2011',d:'Clube de Pelé. Bicampeão mundial em 1962 e 1963.'},

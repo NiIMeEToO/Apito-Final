@@ -8,7 +8,7 @@ Abra `index.html` no navegador.
 - `index.html`: estrutura das telas
 - `style.css`: cores (variáveis), layout e temas claro/escuro
 - `script.js`: rotas, pesquisa, carrossel, formulários e acessibilidade
-Passo a passo da construção:
+# Passo a passo da construção:
 1.	Planejamento. Escolhi o tema (futebol) e listei os itens obrigatórios do enunciado: cartões, abas de pesquisa, contato com formulário, carrossel, imagens, cartões explicativos, modo claro e escuro, rodapé, login e painel de acessibilidade.
 2.	Paleta de cores. Defini verde gramado, amarelo de cartão e neutros esverdeados, com valores próprios para o modo escuro, e medi o contraste de cada par com a fórmula do WCAG.
 3.	Variáveis no CSS. Declarei todas as cores como variáveis (--bg, --fg, --pitch, --card e outras) no seletor :root. Nenhum componente usa um código de cor direto.
